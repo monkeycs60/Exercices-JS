@@ -13,10 +13,32 @@
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <h1>Premier exercice JS</h1>
-        <p>Introduction</p>
+        <div class="container">
+            <form action="" method="get" class="book-form">
+        <h1>Gestionnaire de livres</h1>
+        <label for="book-title">Titre
+            <input type="text" id="book-title" placeholder="Entrez le nom d'un livre">
+        </label>
+        <label for="book-author">Auteur
+            <input type="text" id="book-author" placeholder="Entrez le nom de son auteur">
+        </label>
+        <label for="book-year">Année de publication
+            <input type="text" id="book-year" placeholder="Entrez l'année de publication'">
+        </label>
+        <button type="submit" class="btn1">Ajouter à la collection</button>
+    </form>
+   <div class="tableau-livre">
+        <table>
+          <thead>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Année</th>
+            </thead>
+            <tbody class="book-list"></tbody>
+        </table>
+    </div>
+    </div>
     
-        
         <script src="/main.js" async defer></script>
     </body>
 </html>
