@@ -3,6 +3,7 @@
 
 const bookList = document.querySelector('.book-list');
 const bookForm = document.querySelector('.book-form');
+const container = document.querySelector('.container');
 
 class Book {
     constructor(titre, auteur, annee){
@@ -27,10 +28,12 @@ class Book {
         document.getElementById("book-year").value = "";
     }
     showAlert(message, className) {
-        const alert = document.createElement('div');
+        const alert = document.createElement("div");
         alert.className = `alert ${className}`;
         alert.appendChild(document.createTextNode(message));
         container.insertBefore(alert, bookForm);
+
+       
 
         setTimeout(() => {
 document.querySelector('.alert').remove();
@@ -45,11 +48,14 @@ bookForm.addEventListener('submit', (e) => {
     const year = document.getElementById("book-year").value;
 
     const book = new Book(title, author, year);
-    if (book-title === "" || book-author === "" || book-year === "") {
+    if (title === "" || author === "" || year === "") {
         book.showAlert('Remplir le champ !', 'error');
+    } else {
+        book.addBookToList(book);
+        book.clearFields();
+        book.showAlert('Livre ajouté', 'success');
     }
-    book.addBookToList(book);
-    book.clearFields();
+    
 })
 
 class Interface {
