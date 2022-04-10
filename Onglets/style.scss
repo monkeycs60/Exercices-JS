@@ -56,11 +56,13 @@ overflow: hidden;
   }
   p {
       margin-top: 5vmin;
+      text-align: justify;
    
   }
   .text-onglet {
       position: relative;  
       margin-left: 5vmin;
+      margin-right: 2vmin;
       margin-top: 2vmin;
      
   }
@@ -70,6 +72,10 @@ overflow: hidden;
       left: 0;
       right: 0;
       bottom: 0;
+      
+  }
+  .txtonglet1, .txtonglet2, .txtonglet3 {
+      opacity: 1;
   }
  
   
