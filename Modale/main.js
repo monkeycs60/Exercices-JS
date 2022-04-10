@@ -1,5 +1,5 @@
 let alternance = false;
-document.getElementById("but").addEventListener("click", function(){
+document.getElementById("but").addEventListener("active", function(){
     alternance = !alternance;
     if (alternance) {
         
