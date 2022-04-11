@@ -84,9 +84,6 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.txtonglet1, .txtonglet2, .txtonglet3 {
-  opacity: 1;
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -13,6 +13,7 @@
         
 //     }
 // }
+// console.log(bout);
 // textHide();
 
 
@@ -23,6 +24,7 @@ let Onglet3 = document.getElementsByClassName("onglet3");
 let txt1 = document.getElementsByClassName("txtonglet1");
 let txt2 = document.getElementsByClassName("txtonglet2");
 let txt3 = document.getElementsByClassName("txtonglet3");
+
 
 
 
