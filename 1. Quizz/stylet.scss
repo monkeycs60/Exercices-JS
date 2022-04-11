@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
@@ -6,4 +8,56 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(violet, orange);
+    background-attachment: fixed;
+    overflow-x: hidden;
+   
 }
+.container {
+    font-size: calc(2vmin + 5px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 5vmin;
+}
+
+h1 {
+    padding-top: 2vmin;
+    display: inline-block;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2em;
+    text-shadow: 1px 1px 20px orange;
+}
+.box {
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    height: 10vmin;
+    margin-top: 5%;
+    padding: 5px;
+    width: 40vw;
+    height: 20vh;
+    background: linear-gradient(rgba(65, 105, 225, 0.555), rgba(152, 12, 207, 0.507));
+    
+}
+h2 {
+    font-size: 0.8em;
+    font-weight: 800;
+    margin-bottom: 2vmin;
+}
+label {
+    display: block;
+    margin-top: 1vmin;
+   
+    
+   
+}
+input[type=radio] { 
+    border: 0px; 
+    width: 10%; 
+    height: 2vmin;
+ }
+
