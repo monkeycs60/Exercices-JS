@@ -60,6 +60,7 @@ input[type=radio] {
     border: 0px; 
     width: 10%; 
     height: 2vmin;
+    transform: scale(1.3);
  }
  .btn-valid {
     margin-left: 50%;
@@ -70,6 +71,11 @@ input[type=radio] {
      height: 4%;
      font-size: 1em;
      background: linear-gradient(grey, royalblue );
+     transition: background 0.6s ease-in-out;
+     &:hover {
+        background: lightblue;
+     }
+     
  }
 
 .resultat {
@@ -88,4 +94,16 @@ h3 {
     width: 60%;
     text-align: center;
     
+}
+
+.echec {
+    animation: echec 0.3s ease-in-out;
+}
+
+@keyframes echec {
+    0% {transform: translate(0px, 0px);};
+    33% {transform: translate(5px, 0px);};
+    66% {transform: translate(-5px, 0px);};
+    100% {transform: translate(0px, 0px);};
+
 }
